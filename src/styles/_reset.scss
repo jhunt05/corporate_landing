@@ -1,0 +1,33 @@
+* {
+  outline: none;
+}
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, 
+p, a, em, img, strong, sub, sup, b, u, i, center,
+ol, ul, li, fieldset, form, label, legend,
+article, aside, details, figure, footer, header,
+nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details,
+footer, header, nav, section {
+	display: block;
+}
+
+body {
+  font-family: "Exo", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol, ul {
+  list-style: none;
+}
