@@ -156,7 +156,7 @@ $main-dark-color: #282828;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 70px;
   }
 
   &__item {
@@ -303,5 +303,47 @@ $main-dark-color: #282828;
       color: #8084a0;
       text-decoration: underline;
     }
+  }
+}
+
+.footer {
+  margin-top: 40px;
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    & p {
+      margin: 20px 0 10px;
+      width: 280px;
+      color: #868686;
+      text-align: center;
+      line-height: 25px;
+    }
+
+    & span {
+      color: #868686;
+      margin-bottom: 5px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    & h3 {
+      font-size: 25px;
+      font-weight: 400;
+      margin-right: 4px;
+    }
+  }
+
+  &__links {
+    display: none;
+  }
+
+  &__form {
+    display: none;
   }
 }

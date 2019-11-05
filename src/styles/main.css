@@ -172,7 +172,7 @@ ol, ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 .testimonials__item {
   display: flex;
@@ -307,6 +307,41 @@ ol, ul {
 .features-form__text a {
   color: #8084a0;
   text-decoration: underline;
+}
+
+.footer {
+  margin-top: 40px;
+}
+.footer__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__item p {
+  margin: 20px 0 10px;
+  width: 280px;
+  color: #868686;
+  text-align: center;
+  line-height: 25px;
+}
+.footer__item span {
+  color: #868686;
+  margin-bottom: 5px;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__logo h3 {
+  font-size: 25px;
+  font-weight: 400;
+  margin-right: 4px;
+}
+.footer__links {
+  display: none;
+}
+.footer__form {
+  display: none;
 }
 
 /*# sourceMappingURL=main.css.map */
