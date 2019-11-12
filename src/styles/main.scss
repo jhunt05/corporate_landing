@@ -11,6 +11,10 @@
 $main-color: #ff6d6d;
 $main-dark-color: #282828;
 
+.container {
+  overflow: hidden;
+}
+
 .header {
   background: url(../images/header-back.png) no-repeat;
   background-position: center;
@@ -27,6 +31,7 @@ $main-dark-color: #282828;
     text-align: center;
     color: #616161;
     margin-bottom: 30px;
+    max-width: 500px;
   }
 
   &__btn {
@@ -34,8 +39,11 @@ $main-dark-color: #282828;
     height: 45px;
     width: 150px;
     border-radius: 5px;
+    border: 1px solid $main-color;
     font-size: 13px;
     color: #fff;
+    text-align: center;
+    line-height: 45px;
     text-transform: uppercase;
     font-weight: 300;
     letter-spacing: 1.5px;
@@ -72,6 +80,10 @@ $main-dark-color: #282828;
     font-size: 14px;
     margin-bottom: 20px;
     line-height: 23px;
+  }
+
+  &__block {
+    display: none;
   }
 }
 
@@ -115,7 +127,12 @@ $main-dark-color: #282828;
       width: 280px;
       text-align: center;
       margin: 12px 0 40px;
+      color: #888888;
     }
+  }
+
+  &__images {
+    display: none;
   }
 }
 
@@ -123,6 +140,10 @@ $main-dark-color: #282828;
   margin-top: 40px;
   padding: 0 35px;
   text-align: right;
+
+  &__side-photo {
+    display: none;
+  }
 
   &__heading {
     @include section-heading();
@@ -133,10 +154,6 @@ $main-dark-color: #282828;
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 30px;
-
-    &_dots {
-      color: $main-color;
-    }
   }
 
   &__text {
@@ -196,6 +213,10 @@ $main-dark-color: #282828;
       margin-bottom: 30px;
     }
   }
+
+  &__partners {
+    display: none;
+  }
 }
 
 .new-features {
@@ -211,10 +232,6 @@ $main-dark-color: #282828;
     font-size: 30px;
     font-weight: 400;
     margin-bottom: 30px;
-
-    &_dots {
-      color: $main-color;
-    }
   }
 
   &__text {
@@ -223,6 +240,10 @@ $main-dark-color: #282828;
     font-size: 14px;
     margin-bottom: 20px;
     line-height: 23px;
+  }
+
+  &__img {
+    display: none;
   }
 }
 
@@ -237,6 +258,10 @@ $main-dark-color: #282828;
     color: #fff;
   }
 
+  &__block {
+    display: none;
+  }
+
   &__heading {
     @include section-heading();
     padding-top: 40px;
@@ -246,6 +271,7 @@ $main-dark-color: #282828;
     font-size: 25px;
     text-align: center;
     margin-top: 10px;
+    width: 300px;
   }
 
   &__form {
@@ -347,3 +373,5 @@ $main-dark-color: #282828;
     display: none;
   }
 }
+
+@import 'media';

@@ -7,15 +7,16 @@
   <link href="https://fonts.googleapis.com/css?family=Exo:100,300,400,400i,500&display=swap" rel="stylesheet">
   <title>Corporate</title>
   <link rel="stylesheet" href="./styles/main.css">
+  <script src="./scripts/script.js" defer></script>
 </head>
 <body>
   <div class="container">
     <header class="header">
       <h1 class="header__heading">There is no other platforms for you like this</h1>
-      <button class="header__btn">Try now</button>
+      <a href="#main" class="header__btn">Try now</a>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
       <section class="design">
         <div class="design__container">
           <h3 class="design__heading">New design</h3>
@@ -33,6 +34,7 @@
             rem odio reprehenderit dolores illum molestiae 
             sapiente neque consequatur!</p>
         </div>
+        <div class="design__block"></div>
       </section>
 
       <section class="features">
@@ -45,7 +47,7 @@
               <h4>Some awesome features</h4>
               <p>Lorem ipsum dolor sit amet consectetur, 
                 adipisicing elit. Eveniet placeat et ut architecto 
-                modi itaque ab. Placeat nam, corporis beatae minus</p>
+                modi itaque ab. Placeat nam, corporis</p>
             </div>
             <div class="features__item">
               <img src="./images/featues-item2.png" alt="">
@@ -66,17 +68,20 @@
       </section>
 
       <section class="service">
-        <div class="service__container">
-          <h3 class="service__heading">New design</h3>
-          <h2 class="service__headline">Responsive design, just need your tap 
-            <span class="service__headline_dots">...</span>
-          </h2>
-          <p class="service__text">Lorem ipsum dolor sit 
-            amet consectetur adipisicing elit. Voluptatum nobis, 
-            numquam enim blanditiis voluptates mollitia sapiente 
-            quia laboriosam nihil possimus perferendis 
-            sint est amet excepturi magni, explicabo 
-            voluptas optio.</p>
+        <div class="service__big-container">
+          <div class="service__side-photo">
+            <img class="service__side-photo_macbook" src="./images/macbook.png" alt="macbook">
+          </div>
+          <div class="service__container">
+            <h3 class="service__heading">New design</h3>
+            <h2 class="service__headline">Responsive design, just need your tap</h2>
+            <p class="service__text">Lorem ipsum dolor sit 
+              amet consectetur adipisicing elit. Voluptatum nobis, 
+              numquam enim blanditiis voluptates mollitia sapiente 
+              quia laboriosam nihil possimus perferendis 
+              sint est amet excepturi magni, explicabo 
+              voluptas optio.</p>
+          </div>
         </div>
       </section>
 
@@ -109,6 +114,9 @@
               facere consequatur dolorum nulla.</p>
           </div>
         </div>
+        <div class="testimonials__partners">
+          <img src="./images/Logos.png" alt="">
+        </div>
       </section>
 
       <section class="new-features">
@@ -120,6 +128,9 @@
             inventore quod architecto laudantium quaerat 
             ut nemo asperiores, ratione debitis eligendi deserunt 
             illum qui! Velit est, explicabo facilis illo eaque id!</p>
+          <div class="new-features__img">
+            <img src="./images/browser.png" alt="">
+          </div>
         </div>
       </section>
 
@@ -127,6 +138,10 @@
         <div class="features-form__container">
           <h3 class="features-form__heading">New features</h3>
           <h2 class="features-form__headline">Over 1000 designers are using ...</h2>
+          <div class="features-form__block"> 
+            <img src="./images/arrow.png">
+            <span>30 days free trial for all</span> 
+          </div>
           <form class="features-form__form" method="#" action="#">
             <input class="features-form__input" type="text" placeholder="Full name" id="name" required>
             <input class="features-form__input" type="email" placeholder="Your email" id="email" required>
