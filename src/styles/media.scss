@@ -251,6 +251,10 @@
       height: 35px;
       margin-right: 20px;
       margin-bottom: 0;
+
+      &:focus {
+        border-color: #ff6d6d;
+      }
     }
   
     &__btn {
@@ -300,6 +304,10 @@
         &:last-child{
           margin-bottom: 0;
         }
+
+        &:hover {
+          color: #ff6d6d;
+        }
       }
     }
 
@@ -328,6 +336,10 @@
           &::placeholder {
             text-transform: uppercase;
           }
+
+          &:focus {
+            border-color: #ff6d6d;
+          }
         }
 
         & button {
@@ -349,6 +361,10 @@
 
         & a {
           margin-right: 15px;
+
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
     }
